@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/df"
+        android:layout_toRightOf="@+id/item_img"
+        android:text="燕隆汽修行"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_below="@+id/df"
+        android:layout_toRightOf="@+id/item_img"
+        android:src="@drawable/aa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_alignBottom="@+id/item_img"
+        android:layout_toRightOf="@+id/df"
+        android:text="北京市丰台区"
+        android:id="@+id/weizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/item_img"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff"
+        android:background="#f96300"
+        android:text="签约供应商"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:background="#07e773"
+            android:text="担保交易"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:background="#0349e1"
+            android:text="售后服务"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#f13602"
+            android:gravity="right"
+            android:text="立即下单"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RadioButton
+        android:layout_above="@+id/lin"
+        android:layout_alignParentRight="true"
+        android:id="@+id/xiadan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
